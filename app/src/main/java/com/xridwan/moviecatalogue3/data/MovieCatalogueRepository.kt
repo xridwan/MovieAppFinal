@@ -74,7 +74,7 @@ class MovieCatalogueRepository private constructor(
             override fun shouldFetch(data: PagedList<TvShowEntity>?): Boolean {
                 return data == null || data.isEmpty()
             }
-
+//
             override fun createCall(): LiveData<ApiResponse<List<TvShow>>> {
                 return remoteDataSource.getTvShowList()
             }
